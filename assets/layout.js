@@ -1,12 +1,11 @@
 ﻿(() => {
   const page = document.body.dataset.page;
-  const links = [['home', 'Главная', 'index.html'], ['news', 'Новости'], ['company-history', 'О компании'], ['contacts', 'Контакты']];
+  const links = [['home', 'Главная', 'index.html'], ['news', 'Новости'], ['company-history', 'О компании'], ['shareholders', 'Акционерам'], ['contacts', 'Контакты'], ['stations', 'Сеть АЗС']];
   const header = document.querySelector('[data-site-header]');
   if (header) header.innerHTML = `<div class="container header-row">
     <a class="brand" href="index.html" aria-label="Сибнефтекарт — главная"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"></a>
     <nav class="nav" id="site-nav" aria-label="Основная навигация">
       ${links.map(([id, title, href]) => `<a href="${href || `${id}.html`}" ${id === page ? 'class="is-active" aria-current="page"' : ''}>${title}</a>`).join('')}
-      <a href="https://zao.sncard.ru/karta-azs">Сеть АЗС ↗</a>
     </nav>
     <div class="header-actions"><a class="btn btn--ghost" href="https://cloud.sncard.ru/">Личный кабинет</a>
     <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false" data-menu-toggle><span></span></button></div>
@@ -14,7 +13,7 @@
   const footer = document.querySelector('[data-site-footer]');
   if (footer) footer.innerHTML = `<div class="container footer-main">
     <div class="footer-col"><h2>Сибнефтекарт</h2><address class="footer-links"><span>634009, г. Томск, ул. Розы Люксембург, д. 55</span><a href="tel:+73822651070">+7 (3822) 65-10-70</a><a href="mailto:zao.sncard@sncard.ru">zao.sncard@sncard.ru</a></address></div>
-    <div class="footer-col"><h2>Информация</h2><div class="footer-links"><a href="company-history.html">О компании</a><a href="contacts.html">Контакты</a><a href="https://zao.sncard.ru/privacy-policy">Политика конфиденциальности</a><a href="https://zao.sncard.ru/cookie-policy">Политика использования Cookies</a></div></div>
+    <div class="footer-col"><h2>Информация</h2><div class="footer-links"><a href="news.html">Новости</a><a href="company-history.html">О компании</a><a href="shareholders.html">Акционерам</a><a href="contacts.html">Контакты</a><a href="stations.html">Сеть АЗС</a><a href="https://zao.sncard.ru/privacy-policy">Политика конфиденциальности</a><a href="https://zao.sncard.ru/cookie-policy">Политика использования Cookies</a></div></div>
     <div class="subscribe-panel"><h2>Рассылка АО «НПФ «Сибнефтекарт»</h2><form data-subscribe-form>
       <label class="sr-only" for="subscribe-email">Адрес электронной почты</label>
       <input id="subscribe-email" name="email" type="email" placeholder="Введите адрес эл. почты" autocomplete="email" required>
