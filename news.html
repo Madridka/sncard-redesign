@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Новости АО НПФ Сибнефтекарт — изменения сети АЗС, обслуживание топливных карт и важные уведомления."
+    />
+    <title>Новости — Сибнефтекарт</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="news">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header" data-site-header>
+      <nav class="container fallback-nav" aria-label="Основная навигация">
+        <a href="index.html">Сибнефтекарт</a><a href="news.html">Новости</a
+        ><a href="company-history.html">О компании</a
+        ><a href="contacts.html">Контакты</a
+        ><a href="https://cloud.sncard.ru/">Личный кабинет</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <div class="breadcrumbs">
+            <a href="index.html">Главная</a><span class="sep">/</span
+            ><span>Новости</span>
+          </div>
+          <div class="hero-grid">
+            <div>
+              <span class="kicker">Информационный центр</span>
+              <h1 class="page-title">Новости</h1>
+              <p class="page-lead">
+                Актуальные изменения в работе сети и сервисов
+              </p>
+            </div>
+            <label class="search-field" data-news-controls hidden
+              ><span class="sr-only">Поиск по новостям</span
+              ><input
+                type="search"
+                placeholder="Поиск по новостям"
+                data-news-search
+                aria-controls="news-list"
+                autocomplete="off"
+            /></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="news-toolbar" data-news-controls hidden>
+            <div class="filter-tabs" role="group" aria-label="Фильтр по году">
+              <button
+                class="filter-btn is-active"
+                type="button"
+                data-news-filter="all"
+                aria-pressed="true"
+              >
+                Все новости
+              </button>
+              <button
+                class="filter-btn"
+                type="button"
+                data-news-filter="2024"
+                aria-pressed="false"
+              >
+                2024
+              </button>
+              <button
+                class="filter-btn"
+                type="button"
+                data-news-filter="2023"
+                aria-pressed="false"
+              >
+                2023
+              </button>
+              <button
+                class="filter-btn"
+                type="button"
+                data-news-filter="2021"
+                aria-pressed="false"
+              >
+                2021
+              </button>
+            </div>
+            <span
+              class="news-count"
+              data-news-count
+              role="status"
+              aria-live="polite"
+              >6 публикаций</span
+            >
+          </div>
+          <div class="news-list" id="news-list">
+            <article class="news-card" tabindex="-1" data-news-year="2024">
+              <div class="news-date">17 мая 2024</div>
+              <div>
+                <h3>Изменение списка АЗС, обслуживающих топливные карты</h3>
+                <p>
+                  С 17 мая 2024 года на неопределённый срок приостанавливается
+                  обслуживание по картам СНК и Партнёров на ряде АЗС Томска и
+                  Томской области.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news"
+                aria-label="Читать на официальном сайте: 17 мая 2024"
+                >Подробнее ↗</a
+              >
+            </article>
+            <article class="news-card" tabindex="-1" data-news-year="2024">
+              <div class="news-date">26 января 2024</div>
+              <div>
+                <h3>Изменение списка АЗС, обслуживающих топливные карты</h3>
+                <p>
+                  Прекращено обслуживание по топливным картам СНК и Партнёров на
+                  АЗС ООО «СТД» в посёлке Кандинка.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news"
+                aria-label="Читать на официальном сайте: 26 января 2024"
+                >Подробнее ↗</a
+              >
+            </article>
+            <article class="news-card" tabindex="-1" data-news-year="2023">
+              <div class="news-date">26 сентября 2023</div>
+              <div>
+                <h3>Изменение списка АЗС, обслуживающих топливные карты</h3>
+                <p>
+                  Приостановлено обслуживание топливных карт на АЗС в селе
+                  Малиновка Томского района.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news"
+                aria-label="Читать на официальном сайте: 26 сентября 2023"
+                >Подробнее ↗</a
+              >
+            </article>
+            <article class="news-card" tabindex="-1" data-news-year="2023">
+              <div class="news-date">28 августа 2023</div>
+              <div>
+                <h3>
+                  Изменения настроек безопасности паролей личных кабинетов СНК
+                </h3>
+                <p>
+                  Для пользователей личных кабинетов включается проверка
+                  безопасности пароля с запросом на смену пароля при
+                  несоответствии требованиям.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news"
+                aria-label="Читать на официальном сайте: 28 августа 2023"
+                >Подробнее ↗</a
+              >
+            </article>
+            <article class="news-card" tabindex="-1" data-news-year="2023">
+              <div class="news-date">08 августа 2023</div>
+              <div>
+                <h3>Изменение списка АЗС, обслуживающих топливные карты</h3>
+                <p>
+                  Временно прекращается обслуживание карт на АЗС №3 ООО
+                  «СеверНефтеПродукт» в Колпашево.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news"
+                aria-label="Читать на официальном сайте: 08 августа 2023"
+                >Подробнее ↗</a
+              >
+            </article>
+            <article class="news-card" tabindex="-1" data-news-year="2021">
+              <div class="news-date">15 октября 2021</div>
+              <div>
+                <h3>Изменение списка АЗС, обслуживающих топливные карты</h3>
+                <p>
+                  Прекращается обслуживание карт СНК и Партнёров на АЗС №8 ООО
+                  «СеверНефтеПродукт» в посёлке Комсомольск.
+                </p>
+              </div>
+              <a
+                class="arrow-link"
+                href="https://zao.sncard.ru/news?start=5"
+                aria-label="Читать на официальном сайте: 15 октября 2021"
+                >Подробнее ↗</a
+              >
+            </article>
+          </div>
+          <div class="empty-state panel" data-news-empty hidden>
+            <h2>Ничего не найдено</h2>
+            <p>Попробуйте другое слово или выберите все годы.</p>
+            <button class="btn btn--ghost" type="button" data-news-reset>
+              Сбросить поиск и фильтры
+            </button>
+          </div>
+          <nav
+            class="pagination"
+            data-pagination
+            aria-label="Страницы новостей"
+            hidden
+          ></nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-site-footer>
+      <div class="container footer-bottom">
+        <span>© АО «НПФ «Сибнефтекарт»</span
+        ><a href="contacts.html">Контакты</a>
+      </div>
+    </footer>
+    <script src="assets/layout.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
