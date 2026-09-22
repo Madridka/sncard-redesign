@@ -19,6 +19,21 @@
   });
   matchMedia('(min-width: 981px)').addEventListener('change', () => setMenu(false));
 
+  const subscribeForm = document.querySelector('[data-subscribe-form]');
+  if (subscribeForm) {
+    const status = subscribeForm.querySelector('[data-subscribe-status]');
+    subscribeForm.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!subscribeForm.reportValidity()) return;
+      const email = subscribeForm.elements.email.value.trim();
+      const subject = encodeURIComponent('Заявка на подписку на новости АО «НПФ «Сибнефтекарт»');
+      const body = encodeURIComponent(`Прошу оформить подписку на новости для адреса: ${email}\n\nСогласие на получение рекламно-информационных сообщений предоставлено через форму сайта. Подтверждаю отправку этой заявки.`);
+      status.textContent = 'Откроется почтовое приложение. Отправьте подготовленное письмо, чтобы передать заявку компании.';
+      window.location.href = `mailto:zao.sncard@sncard.ru?subject=${subject}&body=${body}`;
+    });
+    subscribeForm.addEventListener('reset', () => { status.textContent = ''; });
+  }
+
   const cards = [...document.querySelectorAll('[data-news-year]')];
   if (!cards.length) return;
   const search = document.querySelector('[data-news-search]');
