@@ -44,12 +44,20 @@
 .category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .category-card { display: flex; flex-direction: column; min-height: 190px; padding: 23px; border: 1px solid var(--line); border-radius: var(--radius-md); background: #fff; transition: transform .18s, box-shadow .18s; }
 .category-card { background-position: right 22px top 20px; background-repeat: no-repeat; background-size: 31px 31px; }
-.category-card[href="#controllers"], .category-card[href="#tbr"] { background-image: url('../../assets/icons/controller.svg'); }
-.category-card[href="#interfaces"], .category-card[href="#ports"], .category-card[href="#modems"] { background-image: url('../../assets/icons/network.svg'); }
-.category-card[href="#terminals"] { background-image: url('../../assets/icons/equipment.svg'); }
-.category-card[href="#readers"] { background-image: url('../../assets/icons/rfid.svg'); }
-.category-card[href="#voice"] { background-image: url('../../assets/icons/cards.svg'); }
+.category-card:nth-child(2), .category-card:nth-child(3) { background-image: url('../../assets/icons/controller.svg'); }
+.category-card:nth-child(4), .category-card:nth-child(5), .category-card:nth-child(6) { background-image: url('../../assets/icons/network.svg'); }
+.category-card:nth-child(7) { background-image: url('../../assets/icons/rfid.svg'); }
+.category-card:nth-child(8) { background-image: url('../../assets/icons/equipment.svg'); }
+.category-card:first-child { background-image: url('../../assets/icons/cards.svg'); }
 .category-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.category-card { width: 100%; color: inherit; text-align: left; font: inherit; cursor: pointer; }
+.category-card:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+.equipment-dialog { width: min(100% - 32px, 540px); max-height: calc(100dvh - 32px); padding: 32px; border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: var(--shadow-hover); color: var(--ink); }
+.equipment-dialog::backdrop { background: rgb(20 24 30 / 60%); }
+.equipment-dialog__head { display: flex; align-items: center; justify-content: space-between; }
+.equipment-dialog__close { width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--page); color: var(--ink); font-size: 25px; cursor: pointer; }
+.equipment-dialog h2 { margin: 16px 0 10px; font-size: 26px; }
+.equipment-dialog p { margin: 0 0 28px; color: var(--muted); }
 .category-card__number { color: var(--brand); font-size: 12px; font-weight: 700; letter-spacing: .12em; }
 .category-card h2 { margin: 24px 0 0; font-size: 18px; }
 .category-card span:last-child { margin-top: auto; color: var(--brand); font-weight: 600; }

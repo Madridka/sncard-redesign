@@ -1,11 +1,16 @@
 ﻿(() => {
   const page = document.body.dataset.page;
-  const links = [['home', 'Главная', 'index.html'], ['news', 'Новости'], ['company-history', 'О компании'], ['shareholders', 'Акционерам'], ['contacts', 'Контакты'], ['stations', 'Сеть АЗС']];
+  const links = [
+    ['news', 'Новости', 'news.html', 'news.svg'],
+    ['company-history', 'О компании', 'company-history.html', 'company.svg'],
+    ['shareholders', 'Акционерам', 'shareholders.html', 'shareholders.svg'],
+    ['contacts', 'Контакты', 'contacts.html', 'contacts.svg'],
+    ['stations', 'Сеть АЗС', 'stations.html', 'stations.svg'],
+  ];
   const header = document.querySelector('[data-site-header]');
   if (header) header.innerHTML = `<div class="container header-row">
-    <a class="brand" href="index.html" aria-label="ЗАО СНКарт — главная"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"><span class="site-identity">ЗАО СНКарт</span></a>
     <nav class="nav" id="site-nav" aria-label="Основная навигация">
-      ${links.map(([id, title, href]) => `<a href="${href || `${id}.html`}" ${id === page ? 'class="is-active" aria-current="page"' : ''}>${title}</a>`).join('')}
+      ${links.map(([id, title, href, icon]) => `<a href="${href}" ${id === page ? 'class="is-active" aria-current="page"' : ''}><img class="nav-icon" src="../assets/icons/${icon}" alt="" aria-hidden="true">${title}</a>`).join('')}
     </nav>
     <div class="header-actions"><a class="btn btn--ghost" href="https://cloud.sncard.ru/">Личный кабинет</a>
     <button class="mobile-toggle" type="button" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false" data-menu-toggle><span></span></button></div>
