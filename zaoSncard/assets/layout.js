@@ -10,6 +10,7 @@
   const header = document.querySelector("[data-site-header]");
   if (header)
     header.innerHTML = `<div class="container header-row">
+    <a class="brand" href="index.html" aria-label="Сибнефтекарт — главная"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"></a>
     <nav class="nav" id="site-nav" aria-label="Основная навигация">
       ${links.map(([id, title, href, icon]) => `<a href="${href}" ${id === page ? 'class="is-active" aria-current="page"' : ""}><img class="nav-icon" src="../assets/icons/${icon}" alt="" aria-hidden="true">${title}</a>`).join("")}
     </nav>

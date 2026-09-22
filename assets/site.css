@@ -24,7 +24,7 @@
 .nav-dropdown__chevron { width: 7px; height: 7px; margin: -3px 0 0 2px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
 .nav-dropdown[open] .nav-dropdown__chevron { transform: translateY(3px) rotate(225deg); }
 .nav-dropdown__menu { position: absolute; top: calc(100% + 8px); right: 0; z-index: 4; width: 260px; padding: 8px; border: 1px solid var(--line); border-radius: var(--radius-control); background: var(--surface); box-shadow: var(--shadow-hover); }
-.nav-dropdown__menu a { display: block; min-height: auto; padding: 10px 12px; white-space: normal; }
+.site-header .nav .nav-dropdown__menu a { display: flex; width: 100%; min-height: auto; padding: 10px 12px; white-space: normal; }
 .nav-dropdown__menu a[aria-current="page"] { color: var(--brand); background: var(--brand-soft); }
 .kkt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .kkt-card { display: flex; flex-direction: column; min-height: 235px; padding: 28px; }
