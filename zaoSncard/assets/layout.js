@@ -3,7 +3,7 @@
   const links = [['home', 'Главная', 'index.html'], ['news', 'Новости'], ['company-history', 'О компании'], ['shareholders', 'Акционерам'], ['contacts', 'Контакты'], ['stations', 'Сеть АЗС']];
   const header = document.querySelector('[data-site-header]');
   if (header) header.innerHTML = `<div class="container header-row">
-    <a class="brand" href="index.html" aria-label="Сибнефтекарт — главная"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"></a>
+    <a class="brand" href="index.html" aria-label="ЗАО СНКарт — главная"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"><span class="site-identity">ЗАО СНКарт</span></a>
     <nav class="nav" id="site-nav" aria-label="Основная навигация">
       ${links.map(([id, title, href]) => `<a href="${href || `${id}.html`}" ${id === page ? 'class="is-active" aria-current="page"' : ''}>${title}</a>`).join('')}
     </nav>
