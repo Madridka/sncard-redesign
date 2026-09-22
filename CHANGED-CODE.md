@@ -5,67 +5,213 @@
 ~~~~html
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Сибнефтекарт разрабатывает оборудование и программы для автоматизации АЗС, нефтебаз и процессинга топливных карт.">
-  <title>Сибнефтекарт — автоматизация АЗС и нефтебаз</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body data-page="home">
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="site-header" data-site-header>
-    <nav class="container fallback-nav" aria-label="Основная навигация"><a href="index.html"><img class="brand-logo" src="assets/logo2.png" alt="Сибнефтекарт" width="480" height="91"></a><a href="news.html">Новости</a><a href="company-history.html">О компании</a><a href="contacts.html">Контакты</a></nav>
-  </header>
-  <main id="main" tabindex="-1">
-    <section class="home-hero" aria-labelledby="home-title">
-      <div class="container home-hero__grid">
-        <div class="home-hero__copy">
-          <span class="home-eyebrow"><span aria-hidden="true"></span>Технологии для работы АЗС</span>
-          <h1 id="home-title">Вся работа станции — <em>в одной системе.</em></h1>
-          <p>От приёма топлива и кассовых операций до обслуживания карт и обмена данными. Решения, которые помогают управлять АЗС каждый день.</p>
-          <div class="home-actions"><a class="btn btn--primary" href="company-history.html">Узнать о компании <span aria-hidden="true">↗</span></a><a class="btn btn--ghost" href="contacts.html">Связаться с нами <span aria-hidden="true">→</span></a></div>
-          <div class="home-hero__caption"><span>ТОМСК</span><span>РАЗРАБОТКА И ВНЕДРЕНИЕ</span></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Сибнефтекарт разрабатывает оборудование и программы для автоматизации АЗС, нефтебаз и процессинга топливных карт."
+    />
+    <title>Сибнефтекарт — автоматизация АЗС и нефтебаз</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header" data-site-header>
+      <nav class="container fallback-nav" aria-label="Основная навигация">
+        <a href="index.html"
+          ><img
+            class="brand-logo"
+            src="assets/logo2.png"
+            alt="Сибнефтекарт"
+            width="480"
+            height="91" /></a
+        ><a href="news.html">Новости</a
+        ><a href="company-history.html">О компании</a
+        ><a href="contacts.html">Контакты</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="container home-hero__grid">
+          <div class="home-hero__copy">
+            <span class="home-eyebrow"
+              ><span aria-hidden="true"></span>Технологии для работы АЗС</span
+            >
+            <h1 id="home-title">
+              Вся работа станции — <em>в одной системе.</em>
+            </h1>
+            <p>
+              От приёма топлива и кассовых операций до обслуживания карт и
+              обмена данными. Решения, которые помогают управлять АЗС каждый
+              день.
+            </p>
+            <div class="home-actions">
+              <a class="btn btn--primary" href="company-history.html"
+                >Узнать о компании <span aria-hidden="true">↗</span></a
+              ><a class="btn btn--ghost" href="contacts.html"
+                >Связаться с нами <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="home-hero__caption">
+              <span>ТОМСК</span><span>РАЗРАБОТКА И ВНЕДРЕНИЕ</span>
+            </div>
+          </div>
+          <aside class="product-map" aria-labelledby="product-map-title">
+            <div class="product-map__top">
+              <span>ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ</span>
+            </div>
+            <h2 id="product-map-title">ПО для задач станции</h2>
+            <p>Коротко о модулях системы автоматизации АЗС.</p>
+            <ol class="product-map__list">
+              <li>
+                <span class="product-map__step">01</span>
+                <div>
+                  <strong>СНК-АЗС</strong
+                  ><span>Приём и отпуск топлива, магазин и склад</span>
+                </div>
+              </li>
+              <li>
+                <span class="product-map__step">02</span>
+                <div>
+                  <strong>СНК-МФ</strong
+                  ><span>Работа с топливными и бонусными картами</span>
+                </div>
+              </li>
+              <li>
+                <span class="product-map__step">03</span>
+                <div>
+                  <strong>СНК-КС</strong
+                  ><span>Защищённый обмен данными между системами</span>
+                </div>
+              </li>
+              <li>
+                <span class="product-map__step">04</span>
+                <div>
+                  <strong>СНК-КСО</strong
+                  ><span>Касса самообслуживания без оператора</span>
+                </div>
+              </li>
+            </ol>
+            <a
+              class="product-map__link"
+              href="https://www.sncard.ru/programmnoe-obespechenie/avtomatizatsiya-azs"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Весь каталог ПО <span aria-hidden="true">↗</span></a
+            >
+          </aside>
         </div>
-        <aside class="product-map" aria-labelledby="product-map-title">
-          <div class="product-map__top"><span>ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ</span><span class="product-map__index">01 / 04</span></div>
-          <h2 id="product-map-title">ПО для задач станции</h2>
-          <p>Коротко о модулях системы автоматизации АЗС.</p>
-          <ol class="product-map__list">
-            <li><span class="product-map__step">01</span><div><strong>СНК-АЗС</strong><span>Приём и отпуск топлива, магазин и склад</span></div></li>
-            <li><span class="product-map__step">02</span><div><strong>СНК-МФ</strong><span>Работа с топливными и бонусными картами</span></div></li>
-            <li><span class="product-map__step">03</span><div><strong>СНК-КС</strong><span>Защищённый обмен данными между системами</span></div></li>
-            <li><span class="product-map__step">04</span><div><strong>СНК-КСО</strong><span>Касса самообслуживания без оператора</span></div></li>
-          </ol>
-          <a class="product-map__link" href="https://www.sncard.ru/programmnoe-obespechenie/avtomatizatsiya-azs" target="_blank" rel="noopener noreferrer">Весь каталог ПО <span aria-hidden="true">↗</span></a>
-        </aside>
-      </div>
-    </section>
-    <section class="section home-services" aria-labelledby="services-title">
-      <div class="container">
-        <div class="home-section-heading"><span class="home-index">01 / ЧТО МЫ ДЕЛАЕМ</span><h2 id="services-title">Технологии для всей сети</h2><p>От оборудования на АЗС до работы с картами и данными в офисе.</p></div>
-        <div class="service-grid">
-          <article class="service-card"><div class="service-card__icon" aria-hidden="true">▣</div><span class="service-card__number">01</span><h3>Автоматизация АЗС</h3><p>Системы управления оборудованием, отпуском топлива и операциями на станции.</p><a href="company-history.html#history">История разработок <span aria-hidden="true">↗</span></a></article>
-          <article class="service-card"><div class="service-card__icon" aria-hidden="true">▥</div><span class="service-card__number">02</span><h3>Программы для офиса</h3><p>Учёт, анализ и обмен данными между станциями и операционным центром.</p><a href="company-history.html#history">Узнать больше <span aria-hidden="true">↗</span></a></article>
-          <article class="service-card"><div class="service-card__icon" aria-hidden="true">▤</div><span class="service-card__number">03</span><h3>Процессинг карт</h3><p>Топливные, дисконтные и бонусные карты для обслуживания клиентов сети.</p><a href="news.html">Новости сервиса <span aria-hidden="true">↗</span></a></article>
+      </section>
+      <section class="section home-services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="home-section-heading">
+            <span class="home-index">01 / ЧТО МЫ ДЕЛАЕМ</span>
+            <h2 id="services-title">Технологии для всей сети</h2>
+            <p>От оборудования на АЗС до работы с картами и данными в офисе.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">▣</div>
+              <span class="service-card__number">01</span>
+              <h3>Автоматизация АЗС</h3>
+              <p>
+                Системы управления оборудованием, отпуском топлива и операциями
+                на станции.
+              </p>
+              <a href="company-history.html#history"
+                >История разработок <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">▥</div>
+              <span class="service-card__number">02</span>
+              <h3>Программы для офиса</h3>
+              <p>
+                Учёт, анализ и обмен данными между станциями и операционным
+                центром.
+              </p>
+              <a href="company-history.html#history"
+                >Узнать больше <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">▤</div>
+              <span class="service-card__number">03</span>
+              <h3>Процессинг карт</h3>
+              <p>
+                Топливные, дисконтные и бонусные карты для обслуживания клиентов
+                сети.
+              </p>
+              <a href="news.html"
+                >Новости сервиса <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
         </div>
+      </section>
+      <section class="section home-about" aria-labelledby="about-title">
+        <div class="container home-about__grid">
+          <div>
+            <span class="home-index">02 / О КОМПАНИИ</span>
+            <h2 id="about-title">Создано в Томске.<br />Работает для АЗС.</h2>
+            <p>
+              Компания выросла из научно-исследовательской лаборатории
+              автоматизации. С 1993 года «Сибнефтекарт» разрабатывает системы
+              для предприятий нефтепродуктообеспечения и развивает процессинг
+              карт.
+            </p>
+            <a class="btn btn--ghost" href="company-history.html"
+              >История компании <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="home-facts">
+            <div>
+              <strong>1987</strong
+              ><span
+                >первая опытная система безналичных расчётов на АЗС в
+                Томске</span
+              >
+            </div>
+            <div>
+              <strong>1993</strong
+              ><span
+                >создание научно-производственной фирмы «Сибнефтекарт»</span
+              >
+            </div>
+            <div>
+              <strong>2019</strong
+              ><span
+                >специализация на процессинге топливных, дисконтных и бонусных
+                карт</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section home-cta" aria-labelledby="home-cta-title">
+        <div class="container home-cta__inner">
+          <div>
+            <span class="home-index">03 / НА СВЯЗИ</span>
+            <h2 id="home-cta-title">Есть вопрос по работе сервисов?</h2>
+            <p>Служба по работе с клиентами и контакты офиса в Томске.</p>
+          </div>
+          <a class="btn btn--primary" href="contacts.html"
+            >Перейти к контактам <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" data-site-footer>
+      <div class="container footer-bottom">
+        <span>© АО «НПФ «Сибнефтекарт»</span
+        ><a href="contacts.html">Контакты</a>
       </div>
-    </section>
-    <section class="section home-about" aria-labelledby="about-title">
-      <div class="container home-about__grid">
-        <div><span class="home-index">02 / О КОМПАНИИ</span><h2 id="about-title">Создано в Томске.<br>Работает для АЗС.</h2><p>Компания выросла из научно-исследовательской лаборатории автоматизации. С 1993 года «Сибнефтекарт» разрабатывает системы для предприятий нефтепродуктообеспечения и развивает процессинг карт.</p><a class="btn btn--ghost" href="company-history.html">История компании <span aria-hidden="true">→</span></a></div>
-        <div class="home-facts"><div><strong>1987</strong><span>первая опытная система безналичных расчётов на АЗС в Томске</span></div><div><strong>1993</strong><span>создание научно-производственной фирмы «Сибнефтекарт»</span></div><div><strong>2019</strong><span>специализация на процессинге топливных, дисконтных и бонусных карт</span></div></div>
-      </div>
-    </section>
-    <section class="section home-cta" aria-labelledby="home-cta-title"><div class="container home-cta__inner"><div><span class="home-index">03 / НА СВЯЗИ</span><h2 id="home-cta-title">Есть вопрос по работе сервисов?</h2><p>Служба по работе с клиентами и контакты офиса в Томске.</p></div><a class="btn btn--primary" href="contacts.html">Перейти к контактам <span aria-hidden="true">↗</span></a></div></section>
-  </main>
-  <footer class="site-footer" data-site-footer><div class="container footer-bottom"><span>© АО «НПФ «Сибнефтекарт»</span><a href="contacts.html">Контакты</a></div></footer>
-  <script src="assets/layout.js"></script>
-  <script src="assets/app.js"></script>
-</body>
+    </footer>
+    <script src="assets/layout.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
 </html>
-
-
 
 ~~~~
 
@@ -628,11 +774,11 @@
     <div class="subscribe-panel"><h2>Рассылка АО «НПФ «Сибнефтекарт»</h2><form data-subscribe-form>
       <label class="sr-only" for="subscribe-email">Адрес электронной почты</label>
       <input id="subscribe-email" name="email" type="email" placeholder="Введите адрес эл. почты" autocomplete="email" required>
-      <label class="subscribe-consent"><input name="consent" type="checkbox" required><span>Соглашаюсь получать рекламно-информационные сообщения. <a href="https://zao.sncard.ru/agreement-newsletter" target="_blank" rel="noopener noreferrer">Условия рассылки ↗</a></span></label>
+      <label class="subscribe-consent"><input name="consent" type="checkbox" required><span>Соглашаюсь получать рекламно-информационные сообщения. <a href="https://zao.sncard.ru/agreement-newsletter" target="_blank" rel="noopener noreferrer">Условия рассылки</a></span></label>
       <div class="subscribe-actions"><button class="btn btn--primary" type="submit">Подписаться</button><button class="btn btn--subtle" type="reset">Отменить</button></div>
       <p class="subscribe-status" data-subscribe-status role="status" aria-live="polite"></p>
     </form></div>
-  </div><div class="container footer-bottom"><span>© АО «НПФ «Сибнефтекарт»</span><a href="news.html">Новости компании</a></div>`;
+  </div><div class="container footer-bottom"><span>© АО «НПФ «Сибнефтекарт»</span></div>`;
 })();
 
 ~~~~
@@ -928,28 +1074,23 @@ input:disabled { background: var(--page); cursor: not-allowed; }
 .map-card p { color: var(--muted); margin: 0 0 24px; }
 .map-pin { display: none; }
 .site-footer { background: var(--footer); color: #fff; }
-.footer-main { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 48px; padding: 32px 0; }
-.footer-col h2, .subscribe-panel h2 { margin: 0 0 16px; font-size: 16px; font-weight: 500; letter-spacing: 0; }
-.footer-links { display: grid; gap: 8px; color: #c2c5ca; font-size: 12px; font-style: normal; }
+.footer-main { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 32px; padding: 24px 0 12px; }
+.footer-col h2, .subscribe-panel h2 { margin: 0 0 12px; font-size: 15px; font-weight: 500; letter-spacing: 0; }
+.footer-links { display: grid; gap: 5px; color: #c2c5ca; font-size: 12px; font-style: normal; }
 .site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .site-footer :focus-visible { outline-color: var(--gold); }
-.subscribe-panel { background: #2d3036; border: 1px solid #3c3f45; border-radius: var(--radius-lg); padding: 20px; }
-.subscribe-panel h2 { margin-bottom: 4px; }
-.subscribe-panel p { margin: 0 0 16px; font-size: 12px; color: #c2c5ca; }
-.subscribe-panel .btn { width: 100%; }
-.subscribe-panel small { display: block; margin-top: 8px; color: #c2c5ca; font-size: 11px; }
-.subscribe-panel { align-self: start; }
-.subscribe-panel h2 { padding-bottom: 16px; margin-bottom: 20px; position: relative; }
+.subscribe-panel { align-self: start; padding: 16px; background: #2d3036; border: 1px solid #3c3f45; border-radius: var(--radius-md); }
+.subscribe-panel h2 { position: relative; padding-bottom: 10px; margin-bottom: 12px; }
 .subscribe-panel h2::after { content: ""; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--brand); }
-.subscribe-panel input[type="email"] { width: 100%; background: #fff; border-radius: var(--radius-control); }
-.subscribe-consent { display: flex; align-items: flex-start; gap: 10px; margin: 16px 0; color: #f0f1f2; font-size: 12px; line-height: 1.45; cursor: pointer; }
+.subscribe-panel input[type="email"] { width: 100%; min-height: 40px; background: #fff; border-radius: var(--radius-control); }
+.subscribe-consent { display: flex; align-items: flex-start; gap: 8px; margin: 10px 0; color: #f0f1f2; font-size: 11px; line-height: 1.4; cursor: pointer; }
 .subscribe-consent input { flex: 0 0 18px; width: 18px; min-height: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--brand); }
-.subscribe-consent a { color: #f2c66b; text-decoration: underline; text-underline-offset: 3px; }
+.subscribe-consent a { color: #d9dde2; text-decoration: underline; text-underline-offset: 3px; }
 .subscribe-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.subscribe-panel .subscribe-actions .btn { width: auto; flex: 1 1 120px; }
+.subscribe-panel .subscribe-actions .btn { flex: 1 1 120px; min-height: 40px; padding: 8px 12px; }
 .subscribe-status { min-height: 0; margin: 12px 0 0; font-size: 12px; color: #f2c66b; }
 .subscribe-status:empty { display: none; }
-.footer-bottom { display: flex; justify-content: space-between; gap: 24px; padding-block: 24px; color: #b3b7bf; font-size: 11px; }
+.footer-bottom { border-top: 1px solid rgb(255 255 255 / 8%); padding-block: 12px; color: #b3b7bf; font-size: 11px; }
 
 /* Главная: контрастный первый экран и краткий каталог ПО */
 .home-hero { position: relative; overflow: hidden; color: #fff; background: #3a414a; }
@@ -963,11 +1104,11 @@ input:disabled { background: var(--page); cursor: not-allowed; }
 .home-hero__copy > p { max-width: 570px; margin: 0; color: #e0e4e8; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.6; }
 .home-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
 .home-actions .btn { min-height: 48px; }
-.home-actions .btn--ghost { color: #fff; border-color: #a8b1ba; background: transparent; }
-.home-actions .btn--ghost:hover { background: #4a535d; border-color: #d1d7de; }
+.home-actions .btn--ghost { color: #fff; border-color: #777d85; background: transparent; }
+.home-actions .btn--ghost:hover { background: #373e47; border-color: #b9c0c8; }
 .home-hero__caption { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 68px; color: #c9d0d7; }
 .product-map { position: relative; overflow: hidden; padding: 30px; background: #fff; color: var(--ink); border-radius: var(--radius-lg); box-shadow: 0 18px 44px rgb(0 0 0 / 10%); }
-.product-map::before { content: ""; position: absolute; inset: 18px auto 18px 0; width: 4px; background: var(--brand); border-radius: 0 4px 4px 0; }
+.product-map::before { content: ""; position: absolute; inset: 0 0 0 0; width: 4px; background: var(--brand); border-radius: 0 4px 4px 0; height: 100; }
 .product-map__top { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); }
 .product-map__index { color: var(--brand); white-space: nowrap; }
 .product-map h2 { margin: 22px 0 4px; font-size: 24px; }
@@ -1055,8 +1196,7 @@ input:disabled { background: var(--page); cursor: not-allowed; }
   .timeline-item { grid-template-columns: 1fr; gap: 8px; padding-left: 28px; }
   .timeline-year { text-align: left; }
   .timeline-body::before { left: -28px; top: -25px; }
-  .footer-main { grid-template-columns: 1fr; padding-block: 32px; gap: 32px; }
-  .footer-bottom { flex-wrap: wrap; gap: 12px; }
+  .footer-main { grid-template-columns: 1fr; padding-block: 24px 12px; gap: 24px; }
   .home-hero__grid { padding-block: 56px; }
   .home-hero h1 { font-size: clamp(38px, 9vw, 50px); margin: 24px 0; }
   .service-grid, .home-about__grid { grid-template-columns: 1fr; }
@@ -1069,7 +1209,6 @@ input:disabled { background: var(--page); cursor: not-allowed; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
-
 
 ~~~~
 

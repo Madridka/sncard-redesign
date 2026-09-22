@@ -179,28 +179,23 @@ input:disabled { background: var(--page); cursor: not-allowed; }
 .map-card p { color: var(--muted); margin: 0 0 24px; }
 .map-pin { display: none; }
 .site-footer { background: var(--footer); color: #fff; }
-.footer-main { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 48px; padding: 32px 0; }
-.footer-col h2, .subscribe-panel h2 { margin: 0 0 16px; font-size: 16px; font-weight: 500; letter-spacing: 0; }
-.footer-links { display: grid; gap: 8px; color: #c2c5ca; font-size: 12px; font-style: normal; }
+.footer-main { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 32px; padding: 24px 0 12px; }
+.footer-col h2, .subscribe-panel h2 { margin: 0 0 12px; font-size: 15px; font-weight: 500; letter-spacing: 0; }
+.footer-links { display: grid; gap: 5px; color: #c2c5ca; font-size: 12px; font-style: normal; }
 .site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .site-footer :focus-visible { outline-color: var(--gold); }
-.subscribe-panel { background: #2d3036; border: 1px solid #3c3f45; border-radius: var(--radius-lg); padding: 20px; }
-.subscribe-panel h2 { margin-bottom: 4px; }
-.subscribe-panel p { margin: 0 0 16px; font-size: 12px; color: #c2c5ca; }
-.subscribe-panel .btn { width: 100%; }
-.subscribe-panel small { display: block; margin-top: 8px; color: #c2c5ca; font-size: 11px; }
-.subscribe-panel { align-self: start; }
-.subscribe-panel h2 { padding-bottom: 16px; margin-bottom: 20px; position: relative; }
+.subscribe-panel { align-self: start; padding: 16px; background: #2d3036; border: 1px solid #3c3f45; border-radius: var(--radius-md); }
+.subscribe-panel h2 { position: relative; padding-bottom: 10px; margin-bottom: 12px; }
 .subscribe-panel h2::after { content: ""; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--brand); }
-.subscribe-panel input[type="email"] { width: 100%; background: #fff; border-radius: var(--radius-control); }
-.subscribe-consent { display: flex; align-items: flex-start; gap: 10px; margin: 16px 0; color: #f0f1f2; font-size: 12px; line-height: 1.45; cursor: pointer; }
+.subscribe-panel input[type="email"] { width: 100%; min-height: 40px; background: #fff; border-radius: var(--radius-control); }
+.subscribe-consent { display: flex; align-items: flex-start; gap: 8px; margin: 10px 0; color: #f0f1f2; font-size: 11px; line-height: 1.4; cursor: pointer; }
 .subscribe-consent input { flex: 0 0 18px; width: 18px; min-height: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--brand); }
-.subscribe-consent a { color: #f2c66b; text-decoration: underline; text-underline-offset: 3px; }
+.subscribe-consent a { color: #d9dde2; text-decoration: underline; text-underline-offset: 3px; }
 .subscribe-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.subscribe-panel .subscribe-actions .btn { width: auto; flex: 1 1 120px; }
+.subscribe-panel .subscribe-actions .btn { flex: 1 1 120px; min-height: 40px; padding: 8px 12px; }
 .subscribe-status { min-height: 0; margin: 12px 0 0; font-size: 12px; color: #f2c66b; }
 .subscribe-status:empty { display: none; }
-.footer-bottom { display: flex; justify-content: space-between; gap: 24px; padding-block: 24px; color: #b3b7bf; font-size: 11px; }
+.footer-bottom { border-top: 1px solid rgb(255 255 255 / 8%); padding-block: 12px; color: #b3b7bf; font-size: 11px; }
 
 /* Главная: контрастный первый экран и краткий каталог ПО */
 .home-hero { position: relative; overflow: hidden; color: #fff; background: #3a414a; }
@@ -306,8 +301,7 @@ input:disabled { background: var(--page); cursor: not-allowed; }
   .timeline-item { grid-template-columns: 1fr; gap: 8px; padding-left: 28px; }
   .timeline-year { text-align: left; }
   .timeline-body::before { left: -28px; top: -25px; }
-  .footer-main { grid-template-columns: 1fr; padding-block: 32px; gap: 32px; }
-  .footer-bottom { flex-wrap: wrap; gap: 12px; }
+  .footer-main { grid-template-columns: 1fr; padding-block: 24px 12px; gap: 24px; }
   .home-hero__grid { padding-block: 56px; }
   .home-hero h1 { font-size: clamp(38px, 9vw, 50px); margin: 24px 0; }
   .service-grid, .home-about__grid { grid-template-columns: 1fr; }
@@ -320,4 +314,3 @@ input:disabled { background: var(--page); cursor: not-allowed; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
-

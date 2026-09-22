@@ -18,9 +18,9 @@
     <div class="subscribe-panel"><h2>Рассылка АО «НПФ «Сибнефтекарт»</h2><form data-subscribe-form>
       <label class="sr-only" for="subscribe-email">Адрес электронной почты</label>
       <input id="subscribe-email" name="email" type="email" placeholder="Введите адрес эл. почты" autocomplete="email" required>
-      <label class="subscribe-consent"><input name="consent" type="checkbox" required><span>Соглашаюсь получать рекламно-информационные сообщения. <a href="https://zao.sncard.ru/agreement-newsletter" target="_blank" rel="noopener noreferrer">Условия рассылки ↗</a></span></label>
+      <label class="subscribe-consent"><input name="consent" type="checkbox" required><span>Соглашаюсь получать рекламно-информационные сообщения. <a href="https://zao.sncard.ru/agreement-newsletter" target="_blank" rel="noopener noreferrer">Условия рассылки</a></span></label>
       <div class="subscribe-actions"><button class="btn btn--primary" type="submit">Подписаться</button><button class="btn btn--subtle" type="reset">Отменить</button></div>
       <p class="subscribe-status" data-subscribe-status role="status" aria-live="polite"></p>
     </form></div>
-  </div><div class="container footer-bottom"><span>© АО «НПФ «Сибнефтекарт»</span><a href="news.html">Новости компании</a></div>`;
+  </div><div class="container footer-bottom"><span>© АО «НПФ «Сибнефтекарт»</span></div>`;
 })();
